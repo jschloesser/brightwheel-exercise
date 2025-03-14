@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: third_party_leads
+    database: unknown
+    schema: unknown
+    tables:
+      - name: source1
+        columns:
+          - name: phone
+            data_tests:
+              - not_null
+              - custom_test: phone_format
+
+      - name: source2
+        columns:
+          - name: phone
+            data_tests:
+              - not_null
+              - custom_test: phone_format
+
+      - name: source3
+        columns:
+          - name: phone
+            data_tests:
+              - not_null
+              - custom_test: phone_format

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+
+  - name: leads
+    description: Table of current leads.
+    columns:
+      - name: lead_id
+        data_tests:
+          - unique
+          - not_null

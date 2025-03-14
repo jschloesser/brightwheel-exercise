@@ -1,0 +1,12 @@
+models:
+  brightwheel-exercise:
+    marts:
+      core:
+        +materialized: table
+        +schema: core
+        intermediate:
+          +materialized: view
+          +schema: core_intermediate
+    sources:
+      +materialized: view
+      +schema: staging

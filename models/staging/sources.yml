@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: misc_leads
+    database: unknown
+    schema: unknown
+    tables:
+      - name: source1
+      - name: source2
+      - name: source3
+
+  - name: salesforce
+    database: unknown
+    schema: unknown
+    tables:
+      - name: salesforce_leads
